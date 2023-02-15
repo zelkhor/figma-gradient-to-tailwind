@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/zelkhor/figma-gradient-to-tailwind-class/compare/v1.1.0...v1.2.0) (2023-02-15)
+
+
+### Features
+
+* ✨ Adding icon to prompt ([48535a6](https://github.com/zelkhor/figma-gradient-to-tailwind-class/commit/48535a6137ecf2de79b4d57a618cc6bce85279e7))
+
 # [1.1.0](https://github.com/zelkhor/figma-gradient-to-tailwind-class/compare/v1.0.1...v1.1.0) (2023-02-15)
 
 
