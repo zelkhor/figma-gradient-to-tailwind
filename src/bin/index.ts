@@ -10,7 +10,7 @@ const pbcopy = (data) => {
   proc.stdin.end();
 };
 
-console.log(clc.blue('Your Tailwind CSS class is:'));
+console.log(clc.blue('🎨 Your Tailwind CSS class is:'));
 console.log(clc.green(format(string)));
 console.log(
   clc.white('📋 Your Tailwind class has been copied to your clipboard!')
