@@ -1,11 +1,9 @@
 {
-  "name": "figma-gradient-to-tailwind-class",
+  "name": "fgtw",
   "version": "1.1.0",
   "description": "Converts a Figma gradient string to Tailwind CSS JIT className",
   "main": "dist/index.js",
-  "bin": {
-    "fttw-cli": "dist/bin/index.js"
-  },
+  "bin": "dist/bin/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "/dist"
@@ -19,9 +17,9 @@
     "install:ci": "pnpm install --frozen-lockfile",
     "semantic-release": "semantic-release"
   },
-  "keywords": [],
-  "author": "zelkhor",
-  "license": "ISC",
+  "dependencies": {
+    "cli-color": "^2.0.3"
+  },
   "devDependencies": {
     "@commitlint/cli": "^17.4.3",
     "@commitlint/config-conventional": "^17.4.3",
@@ -45,7 +43,7 @@
     "type": "git",
     "url": "https://github.com/zelkhor/figma-gradient-to-tailwind-class.git"
   },
-  "dependencies": {
-    "cli-color": "^2.0.3"
-  }
+  "keywords": ["figma", "gradient", "tailwind", "css", "tailwindcss", "tailwindcss-jit"],
+  "author": "zelkhor",
+  "license": "ISC"
 }
