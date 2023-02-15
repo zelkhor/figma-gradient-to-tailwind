@@ -16,9 +16,9 @@
 ### Installation
 
 ```bash
-npm install figma-gradient-to-tailwind
-yarn add figma-gradient-to-tailwind
-pnpm add figma-gradient-to-tailwind
+npm install figma-gradient-to-tailwind-class
+yarn add figma-gradient-to-tailwind-class
+pnpm add figma-gradient-to-tailwind-class
 ```
 
 <br>
