@@ -26,7 +26,6 @@ export const format = (figmaString: string) => {
       'Invalid background string : argument must start with "background:"'
     );
 
-
   if (figmaString.endsWith(';')) figmaString = figmaString.slice(0, -1);
 
   figmaString = figmaString.replace(urlRegex, '');
