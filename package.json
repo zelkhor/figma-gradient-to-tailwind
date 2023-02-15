@@ -35,10 +35,10 @@
     "typescript": "^4.9.5"
   },
   "bugs": {
-    "url": "https://github.com/zelkhor/figma-gradient-to-tailwind/issues"
+    "url": "https://github.com/zelkhor/figma-gradient-to-tailwind-class/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zelkhor/figma-gradient-to-tailwind.git"
+    "url": "https://github.com/zelkhor/figma-gradient-to-tailwind-class.git"
   }
 }
