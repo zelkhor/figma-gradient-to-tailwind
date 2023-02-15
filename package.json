@@ -1,6 +1,6 @@
 {
   "name": "fgtw",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Converts a Figma gradient string to Tailwind CSS JIT className",
   "main": "dist/index.js",
   "bin": "dist/bin/index.js",
