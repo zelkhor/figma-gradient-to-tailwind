@@ -13,6 +13,14 @@
 
 <br>
 
+### CLI
+
+If you want to use this package as a CLI, you can use fttw-cli instead (which depends on this package):
+
+```bash
+  npx fttw-cli "background: linear-gradient(180deg, #FFFFFF 0%, #000000 100%);"
+```
+
 ### Installation
 
 ```bash
@@ -23,7 +31,7 @@ pnpm add figma-gradient-to-tailwind-class
 
 <br>
 
-### Usage
+### Result
 
 ```js
 import { format } from 'figma-gradient-to-tailwind';
