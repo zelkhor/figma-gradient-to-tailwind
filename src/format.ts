@@ -19,10 +19,13 @@ export const format = (figmaString: string) => {
     throw new Error('Argument must be a string');
   }
 
+  figmaString = figmaString.trim();
+
   if (!figmaString.startsWith('background:'))
     throw new Error(
       'Invalid background string : argument must start with "background:"'
     );
+
 
   if (figmaString.endsWith(';')) figmaString = figmaString.slice(0, -1);
 

@@ -49,6 +49,12 @@ describe('Format Figma gradient string to Tailwind JIT css className', () => {
     expect(() => format(1 as any)).toThrow('Argument must be a string');
   });
 
+  it('Should trim the string', () => {
+    const str = ' background: ';
+    const expectedResult = 'bg-[]';
+    expect(format(str)).toBe(expectedResult);
+  });
+
   it('Should throw an error if argument does not start with "background:"', () => {
     expect(() => format('anything')).toThrow(
       'Invalid background string : argument must start with "background:"'
@@ -97,7 +103,7 @@ describe('Format Figma gradient string to Tailwind JIT css className', () => {
 
   it('Should format a complex gradient string to a valid Tailwind JIT css className', () => {
     const figmaString =
-      'background: radial-gradient(50% 50% at 50% 50%, rgba(218, 23, 23, 0.2) 0%, rgba(87, 255, 7, 0.2) 100%), linear-gradient(171.32deg, rgba(250, 255, 7, 0.2) 0%, rgba(255, 61, 0, 0.2) 89.46%), linear-gradient(0deg, rgba(35, 55, 228, 0.2), rgba(35, 55, 228, 0.2)), url(.jpg);';
+      'background: radial-gradient(50% 50% at 50% 50%, rgba(218, 23, 23, 0.2) 0%, rgba(87, 255, 7, 0.2) 100%), linear-gradient(171.32deg, rgba(250, 255, 7, 0.2) 0%, rgba(255, 61, 0, 0.2) 89.46%), linear-gradient(0deg, rgba(35, 55, 228, 0.2), rgba(35, 55, 228, 0.2)),; ';
 
     const expectedResult =
       'bg-[radial-gradient(50%_50%_at_50%_50%,rgba(218,23,23,0.2)0%,rgba(87,255,7,0.2)100%),linear-gradient(171.32deg,rgba(250,255,7,0.2)0%,rgba(255,61,0,0.2)89.46%),linear-gradient(0deg,rgba(35,55,228,0.2),rgba(35,55,228,0.2))]';
