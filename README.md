@@ -1,6 +1,6 @@
 # Figma gradient to Tailwind CSS
 
- <p align="center">
+ <p align="justify">
     This project is a simple function that takes a background string you get when inspecting a gradient in figma and converts it to a JIT background class for Tailwind CSS. 
     <br />
     <br />
@@ -13,28 +13,28 @@
 
 <br>
 
-### CLI
-
-If you want to use this package as a CLI, you can use fttw-cli instead (which depends on this package):
-
-```bash
-  npx fttw-cli "background: linear-gradient(180deg, #FFFFFF 0%, #000000 100%);"
-```
-
 ### Installation
 
+You can either use this package as a CLI with the following command:
+
 ```bash
-npm install figma-gradient-to-tailwind-class
-yarn add figma-gradient-to-tailwind-class
-pnpm add figma-gradient-to-tailwind-class
+npx fgtw "<YOUR_BACKGROUND_STRING_FROM_FIGMA>
+```
+
+Or you can install it as a package and use it in your code:
+
+```bash
+npm install fgtw
+yarn add fgtw
+pnpm add fgtw
 ```
 
 <br>
 
-### Result
+### Example
 
 ```js
-import { format } from 'figma-gradient-to-tailwind';
+import { format } from 'fgtw';
 
 const figmaGradient =
   'background: linear-gradient(180deg, #FFFFFF 0%, #000000 100%);';
